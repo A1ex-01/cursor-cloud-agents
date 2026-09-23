@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# 环境变量与密钥（务必不要提交真实密钥）
+.env
+.env.local
+*.key
+
+# 编辑器 / 操作系统
+.idea/
+.vscode/
+.DS_Store
+
+# 测试与缓存
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/

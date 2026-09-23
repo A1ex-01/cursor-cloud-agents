@@ -1,0 +1,25 @@
+# ===========================================================================
+# 教学项目依赖
+# 安装： pip install -r requirements.txt
+# 建议在虚拟环境中安装：  python -m venv .venv && source .venv/bin/activate
+# ===========================================================================
+
+# --- E2B 沙箱 SDK ---------------------------------------------------------
+# e2b            : 底层 SDK，提供 Sandbox / 文件系统 / 命令执行
+# e2b-code-interpreter : 在 e2b 之上封装的「代码解释器」沙箱，提供 run_code()
+e2b>=2.0,<3.0
+e2b-code-interpreter>=2.0,<3.0
+
+# --- LangChain / LangGraph / DeepAgents 生态 ------------------------------
+langchain>=0.3,<2.0
+langchain-core>=0.3,<2.0
+langgraph>=0.2
+deepagents>=0.0.10
+
+# 模型 provider（按需保留；示例默认用 openai，可换 anthropic / google）
+langchain-openai>=0.2
+# langchain-anthropic>=0.2
+# langchain-google-genai>=2.0
+
+# --- 工具 -----------------------------------------------------------------
+python-dotenv>=1.0        # 从 .env 读取密钥
